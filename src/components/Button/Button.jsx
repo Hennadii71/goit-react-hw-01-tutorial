@@ -1,5 +1,5 @@
+import { Button } from './Button.styled';
 
-
-export const Button = () => {
-  return <Button click/>;
+export const ButtonWeb = () => {
+  return <Button>click</Button>;
 };

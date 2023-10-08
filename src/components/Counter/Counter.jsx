@@ -1,7 +1,8 @@
 import { Component } from 'react';
-import css from './Counter.module.css';
 
-export class Counter extends Component {
+import { CounterSection, BtnLeft, BtnRight, Counter } from './Counter.styled';
+
+export class Section extends Component {
   state = {
     total: 1,
   };
@@ -22,15 +23,15 @@ export class Counter extends Component {
 
   render() {
     return (
-      <div className={css.counterSection}>
-        <button className={css.btnLeft} onClick={this.subNumber}>
+      <CounterSection>
+        <BtnLeft onClick={this.subNumber}>
           -
-        </button>
-        <p className={css.counter}>{this.state.total}</p>
-        <button className={css.btnRight} onClick={this.addNumber}>
+        </BtnLeft>
+        <Counter>{this.state.total}</Counter>
+        <BtnRight onClick={this.addNumber}>
           +
-        </button>
-      </div>
+        </BtnRight>
+      </CounterSection>
     );
   }
 }

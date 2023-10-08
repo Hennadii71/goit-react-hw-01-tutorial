@@ -1,7 +1,10 @@
-export const  Profile =() => {
-return (
-    <>
-    <h1>Hello react</h1>
-    <p>My first react</p>
-    </>)}
-    
+import { Title, Text } from './Profile.styled';
+
+export const Profile = () => {
+  return (
+    <section>
+      <Title>Hello react</Title>
+      <Text>My first react</Text>
+    </section>
+  );
+};
